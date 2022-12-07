@@ -1,0 +1,38 @@
+---
+---
+@charset "utf-8";
+@import "base";
+
+@font-face {
+    font-family: "Archivo";
+    src: url({{ "/assets/Archivo-VariableFont_wdth,wght.ttf" | relative_url }}) format('truetype');
+
+}
+
+:root {
+    font-family: $text-font;
+    font-size: 18px;
+    @include breakpoint(mobile) {
+        font-size: 16px;
+    }
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: $standard-line-height;
+    letter-spacing: .1em;
+}
+
+body {
+    background-color: $background-color-dark-theme;
+    color: $text-color-dark-theme;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $heading-font;
+}
+
+footer {
+    color: $brand-color;
+}

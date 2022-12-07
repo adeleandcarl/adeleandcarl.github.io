@@ -1,0 +1,28 @@
+$text-font: "Archivo", sans-serif;
+$heading-font: "Archivo", sans-serif;
+$brand-font: "Archivo", sans-serif;
+
+$background-color-dark-theme: #000101;
+$background-color-light-theme: #feffff;
+$text-color-dark-theme: $background-color-light-theme;
+$text-color-light-theme: $background-color-dark-theme;
+$brand-color: #2ac3ae;
+
+$standard-line-height: 1.7;
+$minimum-line-height: 1.4;
+
+$minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
+$minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
+$max-content-width: 60rem;
+
+@mixin breakpoint($form_factor) {
+    @if $form_factor == tablet {
+        @media only screen and (max-width: 768px) { @content; }
+    }
+    @if $form_factor == mobile {
+        @media only screen and (max-width: 670px) { @content; }
+    }
+    @if $form_factor == tiny {
+        @media only screen and (max-width: 350px) { @content; }
+    }
+}
