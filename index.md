@@ -1,6 +1,7 @@
 ---
 layout: page
 custom-css: index
+custom-js: index
 ---
 
 <header>

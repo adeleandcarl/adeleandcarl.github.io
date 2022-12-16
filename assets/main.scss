@@ -15,6 +15,12 @@
     @include breakpoint(mobile) {
         font-size: 16px;
     }
+
+    --background-color-dark-theme: #{$background-color-dark-theme};
+    --background-color-light-theme: #{$background-color-light-theme};
+    --text-color-dark-theme: var(--background-color-light-theme);
+    --text-color-light-theme: var(--background-color-dark-theme);
+    --brand-color: #{$brand-color};
 }
 * {
     box-sizing: border-box;
@@ -25,8 +31,16 @@
 }
 
 body {
-    background-color: $background-color-dark-theme;
-    color: $text-color-dark-theme;
+    background-color: var(--background-color-dark-theme);
+    color: var(--text-color-dark-theme);
+}
+body.theme-1 {
+    --brand-color: #ef6c00;
+}
+body.theme-2 {
+    --background-color-dark-theme: #323539;
+    --background-color-light-theme: #f7efe3;
+    --brand-color: #de4764;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,5 +48,5 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 footer {
-    color: $brand-color;
+    color: var(--brand-color);
 }
