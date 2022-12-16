@@ -8,8 +8,12 @@
     {{ layout.body-class }} {{ page.body-class }}
 {%- endif -%}
     ">
+{% include header.html %}
 <main>
 {{ content }}
 </main>
+<footer>
+&copy; {{ "now" | date: "%Y" }} Adele & Carl
+</footer>
 </body>
 </html>

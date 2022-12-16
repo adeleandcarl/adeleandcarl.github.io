@@ -48,13 +48,10 @@ We'd love to hear from you!
 </textarea>
 
 <input type="text" name="_gotcha" class="gotcha" />
-
-<button id="my-form-button">Send</button>
+<div>
+    <button id="my-form-button">Send</button>
+</div>
 <p id="my-form-status"></p>
 </form>
 
 </section>
-
-<footer>
-&copy; {{ "now" | date: "%Y" }} Adele & Carl
-</footer>

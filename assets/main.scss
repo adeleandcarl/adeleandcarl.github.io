@@ -47,6 +47,38 @@ h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
 }
 
-footer {
+body > header {
+    z-index: 1;
+    display: flex;
+    position: absolute;
+    padding: 1rem 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+    ul {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    }
+    a {
+        &:link, &:active, &:visited {
+            color: var(--text-color-dark-theme);
+            text-decoration: none;
+        }
+    }
+    li a {
+        &:hover {
+            text-decoration: underline;
+            text-underline-offset: .3em;
+        }
+    }
+    #logo {
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+}
+
+body > footer {
+    padding: 3rem 2rem;
     color: var(--brand-color);
 }

@@ -11,84 +11,123 @@ $max-content-width: 40em;
     margin-right: auto;
 }
 
-section, footer {
-    padding: 2em;
-}
-
-header {
-    position: relative;
-    text-align: center;
-    height: min(90vh, 100vw);
-    display: flex;
-    > div {
-        align-self: center;
-        width: 100%;
+main {
+    section {
+        padding: 3rem;
     }
 
-    img {
-        position: absolute;
-        height: 100%;
-        z-index: -1;
-
-        &:nth-of-type(1) {
-            left: 0;
+    header {
+        position: relative;
+        text-align: center;
+        height: min(95vh, 100vw);
+        display: flex;
+        > div {
+            align-self: center;
+            width: 100%;
         }
-        &:nth-of-type(2) {
-            right: 0;
+
+        img {
+            position: absolute;
+            height: 100%;
+            z-index: -1;
+
+            &:nth-of-type(1) {
+                left: 0;
+            }
+            &:nth-of-type(2) {
+                right: 0;
+            }
         }
     }
-}
 
-section {
-    background-color: var(--background-color-light-theme);
-    color: var(--text-color-light-theme);
+    section {
+        background-color: var(--background-color-light-theme);
+        color: var(--text-color-light-theme);
 
-    > p, > div {
-        @include constrain-content-width;
+        > p, > div {
+            @include constrain-content-width;
+        }
     }
-}
 
-h1 { font-weight: 500; font-size: 3em; letter-spacing: 0;}
-h2 {
-    color: var(--brand-color);
-    font-weight: 500;
-    font-variation-settings: 'wdth' 120;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#our-story {
-}
-
-#the-team {
-    background-color: var(--background-color-dark-theme);
-    color: var(--text-color-dark-theme);
+    h1 { font-weight: 500; font-size: 3em; letter-spacing: 0;}
     h2 {
         color: var(--brand-color);
+        font-weight: 500;
+        font-variation-settings: 'wdth' 120;
+        letter-spacing: 0;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 3rem;
     }
 
-    > div {
-        display: grid;
-        grid-template-columns: 2 auto;
-        grid-template-rows: 2 auto;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+    #our-story {
     }
-    img {
-        grid-area: 1 / 1 / 3 / 2;
-        margin: 0 1em 1em 0;
-    }
-    h3 {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-}
 
-form {
-    display: flex;
-    flex-direction: column;
-    @include constrain-content-width;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    gap: 1rem;
+    #the-team {
+        background-color: var(--background-color-dark-theme);
+        color: var(--text-color-dark-theme);
+        h2 {
+            color: var(--brand-color);
+        }
+
+        > div {
+            display: grid;
+            grid-template-columns: 2 auto;
+            grid-template-rows: 2 auto;
+            &:last-of-type {
+                margin-top: 2rem;
+            }
+        }
+        img {
+            grid-area: 1 / 1 / 3 / 2;
+            margin: 0 2rem 2rem 0;
+        }
+        h3 {
+            grid-area: 1 / 2 / 2 / 3;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        @include constrain-content-width;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        gap: 1rem;
+
+        div {
+            text-align: center;
+            margin-top: 1rem;
+        }
+    }
+    input, textarea {
+        font-size: 1em;
+        border: 1px solid var(--background-color-dark-theme);
+        border-radius: 5px;
+        padding: .5rem 1rem;
+        &:focus {
+            border-color: var(--brand-color);
+        }
+    }
+    .gotcha {
+        display: none;
+    }
+    button {
+        font-size: .8em;
+        text-transform: uppercase;
+        border: 1px solid var(--brand-color);
+        border-radius: 5em;
+        padding: .3rem 2rem;
+        width: auto;
+        font-weight: 800;
+        color: var(--brand-color);
+        background-color: var(--background-color-light-theme);
+        &:hover {
+            background-color: var(--brand-color);
+            color: var(--text-color-dark-theme);
+        }
+    }
+    textarea {
+        height: 10em;
+    }
 }
