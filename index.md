@@ -15,7 +15,7 @@ custom-js: index
 
 <section id="our-story" markdown="1">
 
-## Our Story
+## Our Services
 
 {% include about_us.md %}
 

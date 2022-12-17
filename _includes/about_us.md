@@ -1,1 +1,11 @@
-*Lorem* ipsum dolor sit amet, consectetur adipiscing elit. Aenean erat ante, molestie at viverra eu, suscipit et libero. Vivamus rhoncus placerat sem ut convallis. Morbi rhoncus placerat est quis tristique. In hac habitasse platea dictumst. Cras congue nisi non eleifend venenatis. Nullam vestibulum ex gravida neque auctor pharetra eget maximus eros. Fusce sollicitudin ullamcorper tellus eu porta. Morbi sit amet ipsum eget augue convallis efficitur vel a nibh. Praesent vitae finibus enim. Etiam venenatis egestas lectus eget viverra. Aliquam in nulla quis turpis viverra sagittis. Etiam dui mauris, posuere eleifend ex sed, ornare egestas ipsum. Ut lobortis odio dictum leo blandit, nec dapibus mi lacinia. Vestibulum sed mauris nibh. Morbi metus erat, aliquet porttitor augue id, tempus rhoncus purus.
+We leverage our combined hardware, software, and large-scale product leadership experience to provide customized consulting services for start-ups, businesses, and non-profits.
+<br><br>
+Focused engagements providing feedback and refinement of your:
+<br>
+- product roadmap
+- product architecture
+- subject matter deep dives
+- presentation content & structure
+- teams & organizations
+
+Contact us for an initial consultation.
