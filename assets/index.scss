@@ -11,6 +11,11 @@ $max-content-width: 40em;
     margin-right: auto;
 }
 
+body > header {
+    z-index: 1;
+    position: absolute;
+}
+
 main {
     section {
         padding: 3rem;
