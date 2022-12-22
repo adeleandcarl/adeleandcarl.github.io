@@ -6,7 +6,10 @@
 @font-face {
     font-family: "Archivo";
     src: url({{ "/assets/Archivo-VariableFont_wdth,wght.ttf" | relative_url }}) format('truetype');
-
+}
+@font-face {
+    font-family: "Inter";
+    src: url({{ "/assets/Inter-VariableFont_slnt,wght.ttf" | relative_url }}) format('truetype');
 }
 
 :root {
@@ -27,7 +30,7 @@
     margin: 0;
     padding: 0;
     line-height: $standard-line-height;
-    letter-spacing: .1em;
+    letter-spacing: .08em;
 }
 
 body {
