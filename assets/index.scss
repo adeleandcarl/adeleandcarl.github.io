@@ -44,8 +44,15 @@ main {
         background-color: var(--background-color-light-theme);
         color: var(--text-color-light-theme);
 
-        > p, > div {
+        > p, > div, > ul {
             @include constrain-content-width;
+        }
+        > p {
+            margin-top: 1.5em;
+            margin-bottom: 1.5em;
+        }
+        > ul {
+            padding-left: 4em;
         }
     }
 
