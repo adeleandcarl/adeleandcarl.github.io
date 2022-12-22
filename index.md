@@ -5,9 +5,9 @@ custom-js: index
 ---
 
 <header>
-<img src="https://fakeimg.pl/180x400/400/cff?font=bebas&retina=1&text=Adele" />
-<img src="https://fakeimg.pl/180x400/400/cff?font=bebas&retina=1&text=Carl" />
+<img src="{{ '/assets/hero.jpg' | relative_url }}" />
 <div>
+    We can solve your problems.
     <h1>Adele & Carl</h1>
     <h2>Technology consulting</h2>
 </div>
