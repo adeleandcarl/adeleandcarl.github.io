@@ -41,7 +41,7 @@ custom-js: index
 
 We'd love to hear from you!
 
-<form id="my-form" action="https://formspree.io/FORMID" method="POST">
+<form id="my-form" action="https://formspree.io/f/meqwjzqk" method="POST">
 <input type="email" id="email" name="email" placeholder="Email" />
 <input type="text" id="name" name="name" placeholder="Name" />
 <textarea id="message" name="message" placeholder="Message">
