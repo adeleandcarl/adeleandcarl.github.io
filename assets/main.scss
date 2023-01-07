@@ -19,18 +19,18 @@
         font-size: 16px;
     }
 
-    --background-color-dark-theme: #{$background-color-dark-theme};
+    --background-color-dark-theme: #242B33;
+    --brand-color: #ec2d01;
+
     --background-color-light-theme: #{$background-color-light-theme};
     --text-color-dark-theme: var(--background-color-light-theme);
     --text-color-light-theme: var(--background-color-dark-theme);
-    --brand-color: #{$brand-color};
 }
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     line-height: $standard-line-height;
-    letter-spacing: .08em;
 }
 
 body {
@@ -38,9 +38,14 @@ body {
     color: var(--text-color-dark-theme);
 }
 body.theme-1 {
-    --brand-color: #ef6c00;
+    --background-color-dark-theme: #000101;
+    --brand-color: #2ac3ae;
 }
 body.theme-2 {
+    --background-color-dark-theme: #000101;
+    --brand-color: #ef6c00;
+}
+body.theme-3 {
     --background-color-dark-theme: #323539;
     --background-color-light-theme: #f7efe3;
     --brand-color: #de4764;
@@ -48,6 +53,17 @@ body.theme-2 {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $heading-font;
+}
+
+a {
+    text-underline-offset: .3em;
+    transition: color 100ms;
+    &:link, &:active, &:visited {
+        color: var(--text-color-light-theme);
+    }
+    &:hover {
+        color: var(--brand-color);
+    }
 }
 
 body > header {
@@ -80,6 +96,7 @@ body > header {
 }
 
 body > footer {
-    padding: 3rem 2rem;
+    padding: 5rem 0 2rem;
+    text-align: center;
     color: var(--brand-color);
 }

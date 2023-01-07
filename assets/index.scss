@@ -3,7 +3,9 @@
 @charset "utf-8";
 @import "base";
 
-$max-content-width: 40em;
+$max-content-width: 40rem;
+$section-padding: 3rem;
+$paragraph-margin: 1.5rem;
 
 @mixin constrain-content-width {
     max-width: $max-content-width;
@@ -18,26 +20,53 @@ body > header {
 
 main {
     section {
-        padding: 3rem;
+        padding: $section-padding;
     }
 
     header {
         position: relative;
-        text-align: center;
-        height: min(95vh, 100vw);
+        text-align: right;
+        min-height: min(50vw, 30em);
         display: flex;
         justify-content: flex-end;
-        > div {
+        .text {
+            p {
+                line-height: 1.2;
+                margin-bottom: 1em;
+                font-size:2.5em;
+                font-weight:500;
+            }
             align-self: center;
-            width: 50%;
+            width: 40%;
+            padding-right: 7vw;
+            @include breakpoint(tablet) {
+                padding-right: 2rem;
+            }
         }
-
-        img {
-            position: absolute;
-            height: 100%;
-            z-index: -1;
-            left: -7em;
+        h2 {
+            text-align: right;
         }
+        .image {
+            position: relative;
+            width: 60%;
+            img:first-of-type {
+                position: absolute;
+                height: 100%;
+                left: 0;
+                z-index:9;
+                width: 100%;
+                object-fit: cover;
+            }
+            img:nth-of-type(2) {
+                position: absolute;
+                height: 100%;
+                right: 0;
+                width: 20%;
+                z-index:10;
+                object-fit: fill;
+            }
+        }
+        background-color: #242B33;
     }
 
     section {
@@ -48,36 +77,64 @@ main {
             @include constrain-content-width;
         }
         > p {
-            margin-top: 1.5em;
-            margin-bottom: 1.5em;
+            margin-top: $paragraph-margin;
+            margin-bottom: $paragraph-margin;
         }
         > ul {
             padding-left: 4em;
         }
     }
 
-    h1 { font-weight: 500; font-size: 3em; letter-spacing: 0;}
+    h1 { font-weight: 500; font-size: 3em; }
     h2 {
         color: var(--brand-color);
         font-weight: 500;
         font-family: $brand-font;
         font-variation-settings: 'wdth' 120;
-        letter-spacing: 0;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 3rem;
     }
 
-    #our-story {
+    #headline {
+        padding-top: #{$section-padding - $paragraph-margin};
+        em {
+            color: var(--brand-color);
+            font-style: normal;
+            font-weight: 500;
+        }
+        font-weight: 400;
+        font-family: $brand-font;
+        font-variation-settings: 'wdth' 120;
+        text-transform: uppercase;
+        font-size: 1.1em;
+        p {
+            line-height: 2.5;
+        }
+    }
+
+    #our-services {
+        ul {
+            list-style-type: none;
+            text-transform: uppercase;
+            padding-left: 2rem;
+
+            font-family: $brand-font;
+            font-variation-settings: 'wdth' 120;
+            color: var(--brand-color);
+            font-weight: 500;
+            font-size: 1.1em;
+        }
+        li {
+            margin-top: 1em;
+        }
     }
 
     #the-team {
-        padding-top: 0;
-        padding-bottom: 0;
         > div {
             max-width: initial;
             border-radius: 2rem;
-            padding: 3rem;
+            padding: 3rem 3rem 6rem;
             background-color: var(--background-color-dark-theme);
             color: var(--text-color-dark-theme);
             h2 {
@@ -90,7 +147,7 @@ main {
                 grid-template-columns: 2 auto;
                 grid-template-rows: 2 auto;
                 &:last-of-type {
-                    margin-top: 4rem;
+                    margin-top: 3rem;
                 }
             }
             img.headshot {
@@ -101,16 +158,21 @@ main {
             h3 {
                 grid-area: 1 / 2 / 2 / 3;
                 margin-bottom: 1em;
-                font-weight: 600;
-                font-size: 1.25em;
+                font-weight: 500;
+                letter-spacing: .08em;
+                font-size: 1.5em;
             }
             a.social {
                 margin-top: .15em;
                 margin-left: 1em;
                 float: right;
-                img {
+                svg {
                     width: 1.3em;
-                    vertical-align: sub;
+                    height: 1.3em;
+                    fill: var(--text-color-dark-theme);
+                    &:hover {
+                        fill: var(--brand-color);
+                    }
                 }
             }
         }
@@ -151,6 +213,7 @@ main {
         font-weight: 800;
         color: var(--brand-color);
         background-color: var(--background-color-light-theme);
+        transition: color 100ms, background-color 100ms;
         &:hover {
             background-color: var(--brand-color);
             color: var(--text-color-dark-theme);
