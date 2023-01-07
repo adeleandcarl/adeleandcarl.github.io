@@ -3,12 +3,12 @@
 @charset "utf-8";
 @import "base";
 
-$max-content-width: 40rem;
+$default-max-content-width: 40rem;
 $section-padding: 3rem;
 $paragraph-margin: 1.5rem;
 
-@mixin constrain-content-width {
-    max-width: $max-content-width;
+@mixin constrain-content-width($max-width: $default-max-content-width) {
+    max-width: $max-width;
     margin-left: auto;
     margin-right: auto;
 }
@@ -142,7 +142,7 @@ main {
             }
 
             > div {
-                @include constrain-content-width;
+                @include constrain-content-width(50rem);
                 display: grid;
                 grid-template-columns: 2 auto;
                 grid-template-rows: 2 auto;
