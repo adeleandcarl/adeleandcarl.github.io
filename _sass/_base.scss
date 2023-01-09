@@ -2,11 +2,12 @@ $text-font: "Inter", sans-serif;
 $heading-font: "Inter", sans-serif;
 $brand-font: "Archivo", sans-serif;
 
-$background-color-dark-theme: #242B33;
-$background-color-light-theme: #feffff;
+$background-color-dark-theme: #273037; // #242B33;
+$background-color-light-theme: #f6fffd;
 $text-color-dark-theme: $background-color-light-theme;
 $text-color-light-theme: $background-color-dark-theme;
-$brand-color: #ec2d01;
+$brand-color: #d64110; // #ec2d01;
+$brand-color-2: #56b1b6;
 
 $standard-line-height: 1.7;
 $minimum-line-height: 1.4;
@@ -16,6 +17,12 @@ $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
 $max-content-width: 60rem;
 
 @mixin breakpoint($form_factor) {
+    @if $form_factor == wide-desktop {
+        @media only screen and (min-width: 1440px) { @content; }
+    }
+    @if $form_factor == mid-desktop {
+        @media only screen and (min-width: 1080px) { @content; }
+    }
     @if $form_factor == tablet {
         @media only screen and (max-width: 768px) { @content; }
     }

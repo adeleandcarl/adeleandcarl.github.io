@@ -18,9 +18,15 @@
     @include breakpoint(mobile) {
         font-size: 16px;
     }
+    @include breakpoint(mid-desktop) {
+        font-size: 21px;
+    }
+    @include breakpoint(wide-desktop) {
+        font-size: 24px;
+    }
 
-    --background-color-dark-theme: #242B33;
-    --brand-color: #ec2d01;
+    --background-color-dark-theme: #{$background-color-dark-theme};
+    --brand-color: #{$brand-color};
 
     --background-color-light-theme: #{$background-color-light-theme};
     --text-color-dark-theme: var(--background-color-light-theme);

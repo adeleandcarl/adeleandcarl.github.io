@@ -1,7 +1,8 @@
 colors:
-    brand-color: "#ec2d01"
+    brand-color: "#d64110"
+    brand-color-2: "#56b1b6"
     light-color: "#feffff"
-    dark-color: "#242B33"
+    dark-color: "#273037"
 linkedin:
     adele: https://www.linkedin.com/in/adelepeterson/
     carl: https://www.linkedin.com/in/carl-peterson-88b7282/
