@@ -3,11 +3,14 @@ $heading-font: "Inter", sans-serif;
 $brand-font: "Archivo", sans-serif;
 
 $background-color-dark-theme: #273037; // #242B33;
+$background-gradient-color-dark-theme: #000e1a;
 $background-color-light-theme: #fbfffd;
 $text-color-dark-theme: $background-color-light-theme;
 $text-color-light-theme: $background-color-dark-theme;
 $brand-color: #d64110; // #ec2d01;
 $brand-color-2: #56b1b6;
+
+$background-gradient: linear-gradient(var(--background-color-dark-theme) 0 30%, $background-gradient-color-dark-theme);
 
 $standard-line-height: 1.7;
 $minimum-line-height: 1.4;

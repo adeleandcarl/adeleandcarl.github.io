@@ -3,6 +3,7 @@ colors:
     brand-color-2: "#56b1b6"
     light-color: "#fbfffd"
     dark-color: "#273037"
+    gradient-color: "#000e1a"
 linkedin:
     adele: https://www.linkedin.com/in/adelepeterson/
     carl: https://www.linkedin.com/in/carl-peterson-88b7282/
