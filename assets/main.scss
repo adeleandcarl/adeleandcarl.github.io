@@ -90,20 +90,27 @@ body > header {
         gap: 1rem;
     }
     a {
+        transition: color $animation-duration, text-decoration-color $animation-duration;
         &:link, &:active, &:visited {
             color: var(--text-color-dark-theme);
-            text-decoration: none;
+            text-decoration: underline;
+            text-underline-offset: .3em;
+            text-decoration-color: var(--background-color-dark-theme);
         }
     }
     li a {
         &:hover {
-            text-decoration: underline;
-            text-underline-offset: .3em;
+            color: var(--brand-color);
+            text-decoration-color: var(--brand-color);
         }
     }
     #logo {
         font-size: 1.1em;
-        font-weight: 500;
+        @include font-weight(500);
+
+        .ampersand {
+            color: var(--brand-color);
+        }
     }
 }
 

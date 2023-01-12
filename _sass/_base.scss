@@ -32,7 +32,7 @@ $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
     }
 }
 
-$animation-duration: 75ms;
+$animation-duration: 100ms;
 
 $default-max-content-width: 50rem;
 @mixin standard-block-behavior($max-width: $default-max-content-width) {
