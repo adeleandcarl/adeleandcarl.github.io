@@ -105,12 +105,11 @@ main {
         }
     }
 
-    h1 { font-weight: 500; font-size: 2.75em; }
+    h1 { @include font-weight(500); font-size: 2.75em; }
     h2 {
         color: var(--brand-color);
-        font-weight: 500;
         font-family: $brand-font;
-        font-variation-settings: 'wdth' 120;
+        font-variation-settings: 'wdth' 120, 'wght' 500;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 3rem;
@@ -121,36 +120,33 @@ main {
         em {
             color: var(--brand-color);
             font-style: normal;
-            font-weight: 500;
+            font-variation-settings: 'wdth' 120, 'wght' 500;
         }
-        font-weight: 400;
+        @include font-weight(400);
         font-family: $brand-font;
-        font-variation-settings: 'wdth' 120;
+        font-variation-settings: 'wdth' 120, 'wght' 400;
         text-transform: uppercase;
         text-align: center;
         font-size: min(2.6vw, 1.1em);
         p {
             line-height: 2;
         }
- 
-    
     }
-    
+
     @include breakpoint(mobile) {
-                br{content:' ';}
-				br:after{content:' ';}
-            }
+        br{content:' ';}
+        br:after{content:' ';}
+    }
 
     #our-services {
-    	text-align: center;
+        text-align: center;
         ul {
             list-style-type: none;
             text-transform: uppercase;
-            font-family: $brand-font;
-            font-variation-settings: 'wdth' 120;
             color: var(--brand-color);
-            font-weight: 500;
+            font-family: $brand-font;
             font-size: min(3vw, 1.1em);
+            font-variation-settings: 'wdth' 120, 'wght' 500;
             @include standard-block-behavior;
             text-align: center;
         }
@@ -221,7 +217,7 @@ main {
             h3 {
                 grid-area: 1 / 2 / 2 / 3;
                 margin-bottom: 1em;
-                font-weight: 500;
+                @include font-weight(600);
                 letter-spacing: .08em;
                 font-size: 1.5em;
                 @include breakpoint(tablet) {
@@ -285,7 +281,7 @@ main {
         border-radius: 5em;
         padding: .5rem 2rem;
         width: auto;
-        font-weight: 800;
+        @include font-weight(800);
         color: var(--background-color-dark-theme);
         line-height: 1;
         background-color: white;

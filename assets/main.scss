@@ -37,6 +37,7 @@
     margin: 0;
     padding: 0;
     line-height: $standard-line-height;
+    font-synthesis: none;
 }
 
 body {
@@ -70,6 +71,10 @@ a {
     &:hover {
         color: var(--brand-color);
     }
+}
+
+i, cite, em, var, address, dfn {
+    @include font-style-italic;
 }
 
 body > header {

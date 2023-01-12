@@ -17,6 +17,20 @@ $minimum-line-height: 1.4;
 
 $minimum-side-padding: calc(1.5rem + env(safe-area-inset-left));
 $minimum-mobile-side-padding: calc(.75rem + env(safe-area-inset-left));
+@function minimum-side-padding-with-addition($padding: null) {
+    @if ($padding) {
+        @return calc(1.5rem + #{$padding} + env(safe-area-inset-left));
+    } @else {
+        @return $minimum-side-padding;
+    }
+}
+@function minimum-mobile-side-padding-with-addition($padding: null) {
+    @if ($padding) {
+        @return calc(.75rem + #{$padding} + env(safe-area-inset-left));
+    } @else {
+        @return $minimum-mobile-side-padding;
+    }
+}
 
 $animation-duration: 75ms;
 
@@ -32,6 +46,7 @@ $default-max-content-width: 50rem;
         padding-right: $minimum-mobile-side-padding;
     }
 }
+
 @mixin breakpoint($form_factor) {
     @if $form_factor == wide-desktop {
         @media only screen and (min-width: 1440px) { @content; }
@@ -48,4 +63,14 @@ $default-max-content-width: 50rem;
     @if $form_factor == tiny {
         @media only screen and (max-width: 350px) { @content; }
     }
+}
+
+// It appears that Safari on Ventura does not support font-variation-settings
+// in font-face rules https://bugs.webkit.org/show_bug.cgi?id=215605
+@mixin font-style-italic {
+    font-style: italic;
+    font-variation-settings: "slnt" -10;
+}
+@mixin font-weight($weight) {
+    font-variation-settings: "wght" $weight;
 }
