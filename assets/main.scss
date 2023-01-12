@@ -40,8 +40,8 @@
 }
 
 body {
-    background-color: var(--background-color-dark-theme);
-    color: var(--text-color-dark-theme);
+    background-color: var(--background-color-light-theme);
+    color: var(--text-color-light-theme);
 }
 body.theme-1 {
     --background-color-dark-theme: #000101;
@@ -63,7 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     text-underline-offset: .3em;
-    transition: color 100ms;
+    transition: color $animation-duration;
     &:link, &:active, &:visited {
         color: var(--text-color-light-theme);
     }
@@ -78,6 +78,7 @@ body > header {
     gap: 2rem;
     justify-content: space-between;
     width: 100%;
+    background-color: var(--background-color-dark-theme);
     ul {
         list-style-type: none;
         display: flex;

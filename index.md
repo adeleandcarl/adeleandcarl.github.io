@@ -1,5 +1,6 @@
 ---
-layout: page
+layout: default
+no-header: true
 custom-css: index
 custom-js: index
 ---
@@ -38,10 +39,7 @@ custom-js: index
 </div></section>
 
 <section id="contact-us" markdown="1">
-
-## Contact Us
-
-We'd love to hear from you!
+{%- include copy/contact_us.md %}
 
 <form id="my-form" action="https://formspree.io/f/meqwjzqk" method="POST">
 <input type="email" id="email" name="email" placeholder="Email" />

@@ -8,7 +8,7 @@
     {{ layout.body-class }} {{ page.body-class }}
 {%- endif -%}
     ">
-{% comment %}{% include header.html %}{% endcomment %}
+{% unless page.no-header %}{% include header.html %}{% endunless %}
 <main>
 {{ content }}
 </main>
