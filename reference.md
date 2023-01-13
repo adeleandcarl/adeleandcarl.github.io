@@ -6,7 +6,7 @@ title: Reference page
 
 # Header 1 — Basic styles
 
-Let's have a glance at the basic styles: [link](http://github.com/wild-flame/jekyll-simple), **strong**, *italic*, <del>deletion</del>, <ins>insertion</ins>.
+Let's have a glance at the basic styles: [link](http://github.com/wild-flame/jekyll-simple), **strong**, *italic*, ***strong italic***, <del>deletion</del>, <ins>insertion</ins>.
 
 Here's a new paragraph. Let's include an image:
 
