@@ -7,7 +7,7 @@ custom-js: index
 
 <header>
 <div class="image">
-    <img src="{{ '/assets/hero_2.jpg' | relative_url }}" />
+    <img src="{{ '/assets/header.jpg' | relative_url }}" />
     <img src="{{ '/assets/triangle.svg' | relative_url }}" />
 </div>
 <div class="text">

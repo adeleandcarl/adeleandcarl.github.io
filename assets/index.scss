@@ -25,7 +25,7 @@ main {
             width: 60%;
             @include breakpoint(mobile) {
                 width: 100%;
-                height: max(70vw, 25rem);
+                height: max(70vw, 30rem);
             }
             img:first-of-type {
                 position: absolute;
@@ -127,13 +127,18 @@ main {
         font-family: $brand-font;
         font-variation-settings: 'wdth' 120;
         text-transform: uppercase;
+        text-align: center;
         font-size: 1.1em;
         p {
-            line-height: 2.5;
+            line-height: 2;
         }
+        @include breakpoint(mobile) {
+                font-size: 1em;
+            }
     }
 
     #our-services {
+    	text-align: center;
         ul {
             list-style-type: none;
             text-transform: uppercase;
@@ -143,10 +148,11 @@ main {
             font-weight: 500;
             font-size: 1.1em;
             @include standard-block-behavior;
+            text-align: center;
         }
         li {
             margin-top: 1em;
-            padding-left: 2rem;
+            //padding-left: 2rem;
             line-height: $minimum-line-height;
             @include breakpoint(mobile) {
                 padding-left: 0;

@@ -1,1 +1,7 @@
-We leverage our combined *hardware, software, and large-scale product leadership* experience to provide customized consulting services for *start-ups, businesses, and non-profits.*
+Leveraging our combined experience in
+<br>
+*hardware, software, and product leadership*
+<br>
+To provide custom consulting services for
+<br>
+*start-ups, businesses, and non-profits*
