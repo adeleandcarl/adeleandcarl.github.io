@@ -128,14 +128,18 @@ main {
         font-variation-settings: 'wdth' 120;
         text-transform: uppercase;
         text-align: center;
-        font-size: 1.1em;
+        font-size: min(2.6vw, 1.1em);
         p {
             line-height: 2;
         }
-        @include breakpoint(mobile) {
-                font-size: 1em;
-            }
+ 
+    
     }
+    
+    @include breakpoint(mobile) {
+                br{content:' ';}
+				br:after{content:' ';}
+            }
 
     #our-services {
     	text-align: center;
@@ -146,7 +150,7 @@ main {
             font-variation-settings: 'wdth' 120;
             color: var(--brand-color);
             font-weight: 500;
-            font-size: 1.1em;
+            font-size: min(3vw, 1.1em);
             @include standard-block-behavior;
             text-align: center;
         }
