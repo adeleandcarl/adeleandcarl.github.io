@@ -9,7 +9,7 @@ $section-padding: 3rem;
 main {
     header {
         position: relative;
-        min-height: min(40vw, 30em);
+        min-height: 45vw;
         display: flex;
         justify-content: flex-end;
         background: $background-gradient;
@@ -34,9 +34,10 @@ main {
                 z-index:9;
                 width: 100%;
                 object-fit: cover;
+                object-position: center 65%;
                 @include breakpoint(mobile) {
                     position: static;
-                    object-position: 40% 10%;
+                    object-position: 55% 67%;
                 }
             }
             img:nth-of-type(2) {
