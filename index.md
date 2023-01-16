@@ -48,10 +48,10 @@ custom-js: index
 </textarea>
 
 <input type="text" name="_gotcha" class="gotcha" />
-<div>
-    <button id="my-form-button">Send</button>
+<div id="send-button-container">
+    <input type="submit" name="submit" value="Send" />
 </div>
-<p id="my-form-status"></p>
+<div id="form-sent-confirmation">{% include copy/contact_us_form_submission_response.md %}</div>
 </form>
 
 </section>
