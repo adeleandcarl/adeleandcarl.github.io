@@ -122,7 +122,6 @@ main {
             font-style: normal;
             font-variation-settings: 'wdth' 120, 'wght' 500;
         }
-        @include font-weight(400);
         font-family: $brand-font;
         font-variation-settings: 'wdth' 120, 'wght' 400;
         text-transform: uppercase;
