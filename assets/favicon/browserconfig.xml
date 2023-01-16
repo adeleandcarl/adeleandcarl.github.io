@@ -1,9 +1,12 @@
+---
+layout: none
+---
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
             <square150x150logo src="/mstile-150x150.png"/>
-            <TileColor>#da532c</TileColor>
+            <TileColor>{{ site.data.website.colors.dark-color }}</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
