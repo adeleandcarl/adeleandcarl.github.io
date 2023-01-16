@@ -3,6 +3,7 @@ layout: default
 no-header: true
 custom-css: index
 custom-js: index
+end-of-body-script: contact-form.js
 ---
 
 <header>
@@ -41,7 +42,7 @@ custom-js: index
 <section id="contact-us" markdown="1">
 {%- include copy/contact_us.md %}
 
-<form id="my-form" action="https://formspree.io/f/meqwjzqk" method="POST">
+<form id="contact-form" action="https://formspree.io/f/meqwjzqk" method="POST">
 <input type="email" id="email" name="email" placeholder="Email" />
 <input type="text" id="name" name="name" placeholder="Name" />
 <textarea id="message" name="message" placeholder="Message">
@@ -51,7 +52,7 @@ custom-js: index
 <div id="send-button-container">
     <input type="submit" name="submit" value="Send" />
 </div>
-<div id="form-sent-confirmation">{% include copy/contact_us_form_submission_response.md %}</div>
+<div id="contact-form-status"></div>
 </form>
 
 </section>

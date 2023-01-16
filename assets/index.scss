@@ -297,7 +297,7 @@ main {
             color: var(--text-color-dark-theme);
         }
     }
-    #form-sent-confirmation {
+    #contact-form-status {
         position: absolute;
         left: 0;
         top: 0;
@@ -305,5 +305,9 @@ main {
         height: 100%;
         background-color: var(--background-color-light-theme);
         display: none;
+        @include standard-block-behavior;
+    }
+    form.submitted #contact-form-status {
+        display: block;
     }
 }

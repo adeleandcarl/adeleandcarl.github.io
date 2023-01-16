@@ -1,4 +1,5 @@
 ---
+layout: none
 ---
 document.addEventListener("DOMContentLoaded", () => {
 

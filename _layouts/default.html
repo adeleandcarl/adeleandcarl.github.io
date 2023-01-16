@@ -15,5 +15,10 @@
 <footer>
 &copy; {{ "now" | date: "%Y" }} Adele & Carl
 </footer>
+{%- if page.end-of-body-script -%}
+<script>
+{%- include {{ page.end-of-body-script }} -%}
+</script>
+{%- endif -%}
 </body>
 </html>
