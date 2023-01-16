@@ -70,10 +70,4 @@ function foo(){
 
 ## Favicon
 
-<img src="{{ '/assets/favicon/Untitled-16.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/Untitled.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/Untitled@2x.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/UntitledB@2x.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/UntitledC@2x.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/UntitledD@2x.png' | relative_url }}" />
-<img src="{{ '/assets/favicon/UntitledD@3x.png' | relative_url }}" />
+<img src="{{ '/assets/favicon/apple-touch-icon.png' | relative_url }}" />
