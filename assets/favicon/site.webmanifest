@@ -1,0 +1,22 @@
+---
+layout: none
+---
+{
+    "name": "",
+    "short_name": "",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/android-chrome-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "{{ site.data.website.colors.dark-color }}",
+    "background_color": "{{ site.data.website.colors.dark-color }}",
+    "display": "standalone"
+}
