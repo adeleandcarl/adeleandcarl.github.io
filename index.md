@@ -21,9 +21,9 @@ end-of-body-script: contact-form.js
 {%- include copy/headline.md %}
 </section>
 
-<section id="services" markdown="1">
+<section id="services"><div markdown="1">
 {%- include copy/about_us.md %}
-</section>
+</div></section>
 
 <section id="the-team"><div>
     <h2>The Team</h2>
