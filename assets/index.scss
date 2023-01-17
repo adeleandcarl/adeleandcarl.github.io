@@ -134,11 +134,6 @@ main {
         }
     }
 
-    @include breakpoint(mobile) {
-        br{content:' ';}
-        br:after{content:' ';}
-    }
-
     #our-services {
         text-align: center;
         ul {
