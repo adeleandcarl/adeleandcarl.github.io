@@ -119,6 +119,7 @@ main {
 
     #headline {
         padding-top: #{$section-padding - $paragraph-margin};
+        padding-bottom: #{$section-padding - $paragraph-margin};
         em {
             color: var(--brand-color);
             font-style: normal;
@@ -129,7 +130,6 @@ main {
         font-variation-settings: 'wdth' 120, 'wght' 400;
         text-transform: uppercase;
         text-align: center;
-        font-size: min(2.6vw, 1.1em);
         p {
             line-height: 2;
         }
