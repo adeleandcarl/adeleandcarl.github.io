@@ -141,7 +141,6 @@ main {
             text-transform: uppercase;
             color: var(--brand-color);
             font-family: $brand-font;
-            font-size: min(3vw, 1.1em);
             font-variation-settings: 'wdth' 120, 'wght' 500;
             @include standard-block-behavior;
             text-align: center;
