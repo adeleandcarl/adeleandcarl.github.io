@@ -122,6 +122,7 @@ main {
             color: var(--brand-color);
             font-style: normal;
             font-variation-settings: 'wdth' 120, 'wght' 500;
+            line-height: inherit;
         }
         font-family: $brand-font;
         font-variation-settings: 'wdth' 120, 'wght' 400;
