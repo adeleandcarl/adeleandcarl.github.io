@@ -43,9 +43,9 @@ end-of-body-script: contact-form.js
 {%- include copy/contact_us.md %}
 
 <form id="contact-form" action="https://formspree.io/f/meqwjzqk" method="POST">
-<input type="email" id="email" name="email" placeholder="Email" />
-<input type="text" id="name" name="name" placeholder="Name" />
-<textarea id="message" name="message" placeholder="Message">
+<input type="email" id="email" name="email" placeholder="Email" required />
+<input type="text" id="name" name="name" placeholder="Name" required />
+<textarea id="message" name="message" placeholder="Message" required>
 </textarea>
 
 <input type="text" name="_gotcha" class="gotcha" />
