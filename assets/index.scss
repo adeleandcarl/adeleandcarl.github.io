@@ -5,6 +5,7 @@
 
 $paragraph-margin: 1.5rem;
 $section-padding: 3rem;
+$section-border-radius: 2rem;
 
 main {
     header {
@@ -134,7 +135,21 @@ main {
         }
     }
 
-    #our-services {
+    #services {
+        border: 1px solid var(--background-color-dark-theme);
+        border-radius: $section-border-radius;
+        margin-left: $minimum-side-padding;
+        margin-right: $minimum-side-padding;
+        @include breakpoint(mobile) {
+            margin-left: $minimum-mobile-side-padding;
+            margin-right: $minimum-mobile-side-padding;
+        }
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        h2 {
+            margin-bottom: 2rem;
+            border: 0;
+        }
         text-align: center;
         ul {
             list-style-type: none;
@@ -142,16 +157,15 @@ main {
             color: var(--brand-color);
             font-family: $brand-font;
             font-variation-settings: 'wdth' 120, 'wght' 500;
-            @include standard-block-behavior;
             text-align: center;
+            @include standard-block-behavior;
         }
         li {
             margin-top: 1em;
-            //padding-left: 2rem;
             line-height: $minimum-line-height;
-            @include breakpoint(mobile) {
-                padding-left: 0;
-            }
+        }
+        p:last-child {
+            margin-bottom: .5rem;
         }
     }
 
@@ -164,7 +178,7 @@ main {
                 margin-right: $minimum-mobile-side-padding;
             }
             max-width: initial;
-            border-radius: 2rem;
+            border-radius: $section-border-radius;
             padding: 3rem 3rem 6rem;
             @include breakpoint(tablet) {
                 padding-left: $minimum-side-padding;
