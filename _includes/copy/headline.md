@@ -1,7 +1,5 @@
-Leveraging our combined experience in
+Leverage our executive experience in 
 <br>
 *hardware, software, and product leadership*
 <br>
-To provide custom consulting services for
-<br>
-*start-ups, businesses, and non-profits*
+with custom services for your organization

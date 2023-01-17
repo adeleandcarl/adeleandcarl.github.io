@@ -1,6 +1,6 @@
 ## Our Services
 
-Focused engagements providing feedback and refinement of your:
+Providing executive insights and guidance on your:
 
 - product roadmap
 - product architecture
