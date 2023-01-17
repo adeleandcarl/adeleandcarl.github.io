@@ -136,21 +136,21 @@ main {
     }
 
     #services {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
         border: 1px solid var(--background-color-dark-theme);
         border-radius: $section-border-radius;
         margin-left: $minimum-side-padding;
         margin-right: $minimum-side-padding;
+        text-align: center;
         @include breakpoint(mobile) {
             margin-left: $minimum-mobile-side-padding;
             margin-right: $minimum-mobile-side-padding;
         }
-        padding-top: 2rem;
-        padding-bottom: 2rem;
         h2 {
             margin-bottom: 2rem;
             border: 0;
         }
-        text-align: center;
         ul {
             list-style-type: none;
             text-transform: uppercase;
