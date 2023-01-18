@@ -6,7 +6,6 @@
 $paragraph-margin: 1.5rem;
 $section-padding: 1.5rem;
 $section-border-radius: 2rem;
-$minimum-mobile-side-padding: 0.3rem;
 
 main {
     header {
@@ -177,14 +176,16 @@ main {
     #the-team > div {
         margin-left: $minimum-side-padding;
         margin-right: $minimum-side-padding;
+        @include breakpoint(mobile) {
+            margin-left: $minimum-mobile-side-padding;
+            margin-right: $minimum-mobile-side-padding;
+        }
         max-width: initial;
         border-radius: $section-border-radius;
         padding: 3rem 3rem 6rem;
         @include breakpoint(tablet) {
-            padding-left: $minimum-mobile-side-padding;
-            padding-right: $minimum-mobile-side-padding;
-            margin-left: $minimum-mobile-side-padding;
-        	margin-right: $minimum-mobile-side-padding;
+            padding-left: $minimum-side-padding;
+            padding-right: $minimum-side-padding;
         }
         background: $background-gradient;
         color: var(--text-color-dark-theme);
@@ -203,7 +204,6 @@ main {
                 display: flex;
                 flex-direction: column;
             }
-            text-align:justify;
         }
         img.headshot {
             border-radius: 100%;
