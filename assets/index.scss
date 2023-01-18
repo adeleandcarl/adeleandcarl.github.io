@@ -4,7 +4,7 @@
 @import "base";
 
 $paragraph-margin: 1.5rem;
-$section-padding: 3rem;
+$section-padding: 1.5rem;
 $section-border-radius: 2rem;
 
 main {
@@ -118,8 +118,6 @@ main {
     }
 
     #headline {
-        padding-top: #{$section-padding - $paragraph-margin};
-        padding-bottom: #{$section-padding - $paragraph-margin};
         em {
             color: var(--brand-color);
             font-style: normal;
@@ -131,6 +129,8 @@ main {
         text-transform: uppercase;
         text-align: center;
         p {
+            margin-top:$section-padding;
+            margin-bottom:0;
             line-height: 2;
         }
     }

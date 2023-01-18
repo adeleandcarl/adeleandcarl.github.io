@@ -1,5 +1,5 @@
-Leverage our executive experience in 
+Leverage&nbsp;our executive&nbsp;experience&nbsp;in 
 <br>
-*hardware, software, and product leadership*
+*hardware,&nbsp;software, and&nbsp;product&nbsp;leadership*
 <br>
-with custom services for your organization
+with&nbsp;custom&nbsp;services for&nbsp;your&nbsp;organization
