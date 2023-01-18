@@ -9,6 +9,11 @@ layout: default
     display: flex;
     flex-direction: column;
   }
+  @supports (min-height: 100svh) {
+    body {
+      min-height: 100svh;
+    }
+  }
   main {
     flex-grow: 1;
     display: flex;
