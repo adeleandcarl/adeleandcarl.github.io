@@ -24,12 +24,12 @@ main {
     }
 
     > ul, > ol {
-        padding-left: minimum-side-padding-with-addition(2rem);
+        padding-left: minimum-side-padding-with-addition($list-padding-left);
     }
 
     ul, ol {
         ul, ol {
-            padding-left: 2rem;
+            padding-left: $list-padding-left;
             margin-top: 0;
             margin-bottom: 0;
         }

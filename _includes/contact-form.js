@@ -4,6 +4,12 @@ async function handleSubmit(event) {
     event.preventDefault();
     var status = document.getElementById("contact-form-status");
     var data = new FormData(event.target);
+
+    function failureHTML(errorHTML) {
+        var innerHTML = `{% include copy/contact_us_form_submission_response_failure.md %}`;
+        return innerHTML.replace("~~~ERROR~~~", errorHTML);
+    }
+
     fetch(event.target.action, {
         method: form.method,
         body: data,
@@ -13,20 +19,20 @@ async function handleSubmit(event) {
     }).then(response => {
         form.classList.add("submitted");
         if (response.ok) {
-            status.innerHTML = "{% include copy/contact_us_form_submission_response_success.md %}";
+            status.innerHTML = `{% include copy/contact_us_form_submission_response_success.md %}`;
             form.reset()
         } else {
             response.json().then(data => {
                 if (Object.hasOwn(data, 'errors')) {
-                    status.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+                    status.innerHTML = failureHTML(data["errors"].map(error => error["message"]).join("</li><li>"))
                 } else {
-                    status.innerHTML = "{% include copy/contact_us_form_submission_response_failure.md %}"
+                    status.innerHTML = failureHTML("submission occurred, responded with unknown error")
                 }
             })
         }
     }).catch(error => {
         form.classList.add("submitted");
-        status.innerHTML = "{% include copy/contact_us_form_submission_response_failure.md %}"
+        status.innerHTML = failureHTML("fetch() call failed")
     });
 }
 form.addEventListener("submit", handleSubmit)

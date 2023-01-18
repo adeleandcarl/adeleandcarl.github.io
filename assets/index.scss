@@ -315,10 +315,14 @@ main {
         left: 0;
         top: 0;
         width: 100%;
-        height: 100%;
+        height: 101%;
         background-color: var(--background-color-light-theme);
         display: none;
         @include standard-block-behavior;
+
+        ul {
+            padding-left: $list-padding-left;
+        }
     }
     form.submitted #contact-form-status {
         display: block;
