@@ -24,7 +24,10 @@
     {%- elsif page.excerpt -%}
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords: 50 }}" />
     {%- endif -%}
-
+    {%- if page.meta-image -%}
+    <meta property="og:image" content="{{'/assets/' | append: page.meta-image | absolute_url }}" />
+    {%- endif -%}
+  
     <!-- CSS -->
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
     {%- if layout.custom-css -%}

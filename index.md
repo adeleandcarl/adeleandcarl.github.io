@@ -1,6 +1,7 @@
 ---
 layout: default
 no-header: true
+meta-image: header.jpg
 custom-css: index
 custom-js: index
 end-of-body-script: contact-form.js
